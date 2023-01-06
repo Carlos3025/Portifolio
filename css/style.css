@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(43, 43, 43);
+}
+
+svg{
+    width: 35px;
+
+}
+
+.logo{
+    width: 15%;
+}
+
+#hanburgue{
+    display: none;
+    background-color: transparent;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+}
+
+li{
+    margin-right: 10px;
+    font-size: 20px;
+    font-family:  sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+#Conteiner{
+    display: grid;
+    grid-template-areas: 
+    "item1"
+    "item2";
+}
+
+#item1{
+   grid-area: item1;
+}
+
+#item2{
+    grid-area: item2;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(59, 59, 59);
+}
+
+.btn{
+    display: none;
+}
+
+.link1{
+    color: rgb(110, 105, 105);
+    border-right: 1px solid  rgb(110, 105, 105);
+    margin-right: 10px;
+}
+.link2{
+    color:rgb(224, 224, 224);
+    border-right: 1px solid rgb(224, 224, 224);
+    margin-right: 10px;
+}
+.link3{
+    color:rgb(224, 224, 224) ;
+    border-right: 1px soli drgb(224, 224, 224);
+    margin-right: 10px;
+}
+
+main{
+    margin: 55px;
+}
+
+#Conteiner-main{
+    display: grid;
+    grid-template-areas: 
+    "item1-main item2-main "
+     "item3-main item4-main"
+     " item5-main item6-main";
+     gap: 3px;
+     text-align: center;
+}
+
+#item1-main{
+    position: relative; 
+}
+
+.img{
+    width: 100%;
+    border: 1px solid wheat;
+    border-radius: 5px;
+}
+
+#item2-main{
+  position: relative;
+}
+
+#item3-main{
+  position: relative;
+}
+
+#item4-main{
+    position: relative;
+}
+
+#item5-main{
+  position: relative; 
+}
+
+#item6-main{
+    position: relative;
+}
+
+/*MOBILE*/  
+
+@media screen and (max-width:600px){
+    .logo{
+        width: 20%;
+    }
+}
+
+@media screen and (max-width:500px){
+    #Conteiner-main{
+        grid-template-areas: 
+    "item1-main item2-main "
+     "item3-main item4-main"
+     "item5-main item6-main";
+    }
+
+    .logo{
+        width: 30%;
+    }
+
+    .link1{
+        border-right: none;
+    }
+
+    .link2{
+        border-right: none;
+    }
+
+    #hanburgue{
+        display:block;
+        font-size: 20px;
+        color: white;
+        z-index: 1;
+    }
+
+    #items{
+        display: none;
+        position: absolute;
+        width: 100%;
+        padding: 17px;
+        top: 0px;
+        left: 0px;
+        background-color: rgb(43, 43, 43);
+        text-align: center;
+        
+    }
+
+    ul{
+        display: block;
+        justify-content: center;
+    }
+
+}
+
+
+
+
